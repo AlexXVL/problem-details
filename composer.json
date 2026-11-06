@@ -1,0 +1,53 @@
+{
+    "name": "alexxvl/problem-details",
+    "description": "RFC 9457 Problem Details for Laravel APIs",
+    "keywords": [
+        "laravel",
+        "problem-details",
+        "rfc9457",
+        "api",
+        "error-handling"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/AlexXVL/problem-details",
+    "support": {
+        "issues": "https://github.com/AlexXVL/problem-details/issues",
+        "source": "https://github.com/AlexXVL/problem-details"
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/auth": "^11.0|^12.0|^13.0",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/http": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0",
+        "illuminate/validation": "^11.0|^12.0|^13.0",
+        "symfony/http-kernel": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0|^11.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlexXVL\\ProblemDetails\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AlexXVL\\ProblemDetails\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AlexXVL\\ProblemDetails\\ProblemDetailsServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
